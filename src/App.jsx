@@ -92,14 +92,16 @@ function App() {
 				deleteTodo,
 			}}
 		>
-			<TodoFilterForm
-				name={filterName}
-				setName={setFilterName}
-				hideCompleted={hideCompletedFilter}
-				setHideCompleted={setHideCompletedFilter}
-			/>
-			<TodoList />
+			<div className="forms-container">
+				<TodoFilterForm
+					name={filterName}
+					setName={setFilterName}
+					hideCompleted={hideCompletedFilter}
+					setHideCompleted={setHideCompletedFilter}
+				/>
+			</div>
 			<NewTodoForm />
+			<TodoList />
 		</TodoContext.Provider>
 	)
 }

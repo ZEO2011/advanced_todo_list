@@ -1,57 +1,74 @@
 #new-todo-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin-top: 0.32rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #new-todo-form > * {
-  margin: 0.15rem;
+	margin: 0.15rem;
 }
 
 #list {
-  padding: 0;
+	padding: 0;
 }
 
 .list-item {
-  list-style: none;
+	list-style: none;
 }
 
 .list-item-label:hover,
 [data-list-item-checkbox]:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .list-item-label:hover > [data-list-item-text] {
-  color: #333;
-  text-decoration: line-through;
+	color: #333;
+	text-decoration: line-through;
 }
 
 [data-list-item-checkbox]:checked ~ [data-list-item-text] {
-  text-decoration: line-through;
-  color: #aaa;
+	text-decoration: line-through;
+	color: #aaa;
 }
 
 [data-button-delete] {
-  margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 [data-button-edit] {
-  margin-left: 0.5rem;
+	margin-left: 0.5rem;
 }
 
 .filter-form {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  border-bottom: 1px solid black;
-  padding-bottom: 0.5rem;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 0.5rem;
+	justify-content: center;
 }
 
 .filter-form-group {
-  display: flex;
-  gap: 0.25rem;
+	display: flex;
+	gap: 0.25rem;
+}
+
+.todo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#list {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: 0.5rem;
 }
